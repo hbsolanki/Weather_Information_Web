@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid black; */
+}
+
+.searchBox {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-top: 3rem;
+}
+
+#search {
+  margin-top: 1rem;
+  width: 200px;
+  background-color: black;
+  color: white;
+}
+
+#inputBox {
+  margin-top: 1rem;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoBox {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 5rem;
+  visibility: hidden;
+}
+
+.mainPoint {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  flex-direction: row;
+  /* margin: 5rem; */
+  text-align: center;
+  justify-content: center;
+}
+
+.cityDetails > h3 {
+  text-align: center;
+}
+
+.point {
+  height: 70px;
+  width: 40%;
+  padding: 2rem;
+  margin: 1.5rem;
+  text-align: center;
+  border: 1px solid green;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: rgba(50, 143, 156, 0.084);
+}
+
+.point:hover {
+  scale: 1.1So;
+}
