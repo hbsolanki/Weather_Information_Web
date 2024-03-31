@@ -3,25 +3,40 @@
   margin: 0;
   /* border: 1px solid black; */
 }
+.h {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .searchBox {
   text-align: center;
   margin-bottom: 25px;
-  padding-top: 3rem;
+  padding-top: 6rem;
+  font-size: 20px;
+  border: 1px solid black;
+  background-image: url("./Database/Images/pexels-pixabay-163255.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
 }
 
 #search {
   margin-top: 1rem;
-  width: 200px;
+  width: 50px;
+  height: 50px;
   background-color: black;
   color: white;
+  border-radius: 9999px;
 }
 
 #inputBox {
   margin-top: 1rem;
   width: 500px;
+  height: 50px;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  border: solid;
+  border-radius: 8px;
 }
 
 .infoBox {
@@ -40,10 +55,31 @@
   /* margin: 5rem; */
   text-align: center;
   justify-content: center;
+  background-color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.cityDetails {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.2rem;
+  /* border: 1px solid black; */
 }
 
 .cityDetails > h3 {
   text-align: center;
+  font-size: 30px;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  /* display: flex; */
+  justify-content: center;
+  /* flex-direction: row; */
+}
+.weather-img {
+  width: 100px;
 }
 
 .point {
@@ -51,14 +87,36 @@
   width: 40%;
   padding: 2rem;
   margin: 1.5rem;
-  text-align: center;
+  text-align: justify;
   border: 1px solid green;
   text-align: center;
   justify-content: center;
   vertical-align: middle;
   background-color: rgba(50, 143, 156, 0.084);
+  border-radius: 8px;
+  font-size: 30px;
+  font-family: "Aparajita";
 }
 
 .point:hover {
   scale: 1.1So;
+}
+
+.weather-body {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+  display: none;
+}
+.weather-body img {
+  width: 60%;
+}
+
+.pwthr {
+  text-align: center;
+  background-color: skyblue;
+  color: black;
+  margin: 1.2rem;
+  font-size: 1.5rem;
 }
