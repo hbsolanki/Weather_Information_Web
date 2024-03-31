@@ -47,19 +47,25 @@ searchBtn.addEventListener("click", async (evt) => {
   infoBox.style.visibility = "hidden";
   let inputBox = document.getElementById("inputBox");
 
+  let p = document.getElementById("notFound");
+
+  p.innerHTML = "";
+
   city = inputBox.value;
-  let info = await getWeatherInfo();
-  printingDetails(info);
+  try {
+    let info = await getWeatherInfo();
+    printingDetails(info);
+  } catch (e) {
+    p.innerHTML = "No Such Place Exists!";
+    p.style.color = "red";
+    console.log(e);
+  }
 
   inputBox.value = "";
 });
 
 const printingDetails = (info) => {
   console.log(info);
-  let p = document.getElementById("notFound");
-
-  p.innerHTML = "";
-
   try {
     let cityNameShow = document.getElementById("cityNameShow");
     cityNameShow.innerHTML = info.city;
@@ -103,8 +109,6 @@ const printingDetails = (info) => {
     let wind = document.getElementById("wind");
     wind.innerHTML = " Wind Speed : " + info.wind.speed + "km/h";
   } catch (e) {
-    p.innerHTML = "No Such Place Exists!";
-    p.style.color = "red";
     console.log(e);
   }
 };
